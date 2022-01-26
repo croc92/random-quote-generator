@@ -1,13 +1,71 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  min-height: 180px;
+}
+
+#quote-box {
+  border: 2px solid rgb(18, 18, 126);
+  max-width: 400px;
+  min-height: 100px;
+  background-color: #7fffd4;
+  padding: 20px;
+  line-height: 2rem;
+}
+
+#text {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#author {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#new-quote {
+  height: 28px;
+  width: 80px;
+  background-color: #d0ffd0;
+  color: #080841;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+#tweet-quote {
+  position: relative;
+  left: 240px;
+}
+
+.fadeInAndOut {
+  opacity: 1;
+  animation: fade 1s linear;
+}
+
+@keyframes fade {
+  100% {opacity: 1}
+  0%, 50% {opacity: 0}
+}
+
+.fadeInAndOut2 {
+  opacity: 1;
+  animation: fade2 1s linear;
+}
+
+@keyframes fade2 {
+  100% {opacity: 1}
+  0%, 50% {opacity: 0}
 }

@@ -15,7 +15,7 @@
 
 #quote-box {
   border: 2px solid rgb(18, 18, 126);
-  max-width: 400px;
+  width: 400px;
   min-height: 100px;
   background-color: #7fffd4;
   padding: 20px;
@@ -52,20 +52,22 @@
 
 .fadeInAndOut {
   opacity: 1;
-  animation: fade 1s linear;
+  animation: fade 1.5s linear;
 }
 
 @keyframes fade {
   100% {opacity: 1}
-  0%, 50% {opacity: 0}
+  0% {opacity: 0.1;}
+  50% {opacity: 0.5}
 }
 
 .fadeInAndOut2 {
   opacity: 1;
-  animation: fade2 1s linear;
+  animation: fade2 1.5s linear;
 }
 
 @keyframes fade2 {
   100% {opacity: 1}
-  0%, 50% {opacity: 0}
+  0% {opacity: 0.1;}
+  50% {opacity: 0.5}
 }
